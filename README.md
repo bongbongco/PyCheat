@@ -4,9 +4,9 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
 ## PyCheat 소스 분석하기
 ###사용 모듈  
 * sys :  
-** sys - platform :  
-** sys - maxsize :  
-** sys - exit :  
+  * sys - platform :  
+  * sys - maxsize :  
+  * sys - exit :  
 
 * ctype :  
 
