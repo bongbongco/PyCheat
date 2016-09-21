@@ -4,47 +4,44 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
 ## PyCheat 소스 분석하기
 ###사용 모듈  
 * sys :  
-  * sys - platform :  
-  * sys - maxsize :  
-  * sys - exit :  
+ * sys - platform :  
+ * sys - maxsize :  
+ * sys - exit :  
 
 * ctype :  
-
-
-ctypes - windll :  
-ctypes - wintypes :  
-ctypes - POINTER :  
-ctypes - Structure :  
-ctypes - Union :  
-ctypes - addressof :  
-ctypes - byref :  
-ctypes - cast :  
-ctypes - create_unicode_buffer :  
-ctypes - create_string_buffer :  
-
+ * ctypes - windll :  
+ * ctypes - wintypes :  
+ * ctypes - POINTER :  
+ * ctypes - Structure :  
+ * ctypes - Union :  
+ * ctypes - addressof :  
+ * ctypes - byref :  
+ * ctypes - cast :  
+ * ctypes - create_unicode_buffer :  
+ * ctypes - create_string_buffer :  
+  
 (C Type / Python Type)  
-ctypes - c_bool : _Bool / bool(1)
-ctypes - c_char : char / 
-ctypes - c_ubyte : unsigned char / 
-ctypes - c_byte  : char / 
-ctypes - c_short : short / int  
-ctypes - c_int : int / int  
-ctypes - c_uint16 : unsigned short / int  
-ctypes - c_uint32 : unsigned long / 
-ctypes - c_uint64 :  
-ctypes - c_long : long / 
-ctypes - c_longlong : __int64 or long long / 
-ctypes - c_ulong : unsigned long / 
-ctypes - c_ulonglong : unsigned long long / int  
-ctypes - c_ushort : unsigned short / int   
-ctypes - c_void_p : void * / 
-ctypes - c_char_p : char * / 
-ctypes - c_wchar_p : wchar_t * / 
-ctypes - c_size_t :  
-
-ctypes - sizeof :  
-ctypes - c_ARRAY(ARRAY as c_ARRAY) :  
-ctypes - WinError :  
+ * ctypes - c_bool : _Bool / bool(1)
+ * ctypes - c_char : char / 
+ * ctypes - c_ubyte : unsigned char / 
+ * ctypes - c_byte  : char / 
+ * ctypes - c_short : short / int  
+ * ctypes - c_int : int / int  
+ * ctypes - c_uint16 : unsigned short / int  
+ * ctypes - c_uint32 : unsigned long / 
+ * ctypes - c_uint64 :  
+ * ctypes - c_long : long / 
+ * ctypes - c_longlong : __int64 or long long / 
+ * ctypes - c_ulong : unsigned long / 
+ * ctypes - c_ulonglong : unsigned long long / int  
+ * ctypes - c_ushort : unsigned short / int   
+ * ctypes - c_void_p : void * / 
+ * ctypes - c_char_p : char * / 
+ * ctypes - c_wchar_p : wchar_t * / 
+ * ctypes - c_size_t :  
+ * ctypes - sizeof :  
+ * ctypes - c_ARRAY(ARRAY as c_ARRAY) :  
+ * ctypes - WinError :  
 
 * struct : 파이썬 문자열을 C 구조체로의 변환을 제공  
 * time : 시간 모듈  
