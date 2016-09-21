@@ -48,3 +48,5 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
 * threading : 스레드 프로그래밍 모듈  
 * binascii : 바이너리 데이터와 ASCII 데이터의 상호변환을 제공하는 모듈  
 * re : 정규표현식 모듈  
+  
+###세부 구조  
