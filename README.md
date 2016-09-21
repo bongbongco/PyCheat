@@ -40,7 +40,6 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
  * ctypes - sizeof :  
  * ctypes - c_ARRAY(ARRAY as c_ARRAY) :  
  * ctypes - WinError :  
-
 * struct : 파이썬 문자열을 C 구조체로의 변환을 제공  
 * time : 시간 모듈  
 * inspect : 런타임 Objectdml 정보를 얻을 수 있게 도와주는 모듈(Modules, classes, methods, functions..)  
