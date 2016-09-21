@@ -19,9 +19,7 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
  * ctypes - cast :  
  * ctypes - create_unicode_buffer :  
  * ctypes - create_string_buffer :  
-  
-(C Type / Python Type)  
- * ctypes - c_bool : _Bool / bool(1)
+ * ctypes - c_bool : _Bool / bool(1) (C Type / Python Type)  
  * ctypes - c_char : char / 
  * ctypes - c_ubyte : unsigned char / 
  * ctypes - c_byte  : char / 
