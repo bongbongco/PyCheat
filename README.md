@@ -3,12 +3,14 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
 
 ## PyCheat 소스 분석하기
 ###사용 모듈  
-1. sys :  
-2. ctype :  
+* sys :  
+** sys - platform :  
+** sys - maxsize :  
+** sys - exit :  
 
-sys - platform :  
-sys - maxsize :  
-sys - exit :  
+* ctype :  
+
+
 ctypes - windll :  
 ctypes - wintypes :  
 ctypes - POINTER :  
@@ -44,11 +46,11 @@ ctypes - sizeof :
 ctypes - c_ARRAY(ARRAY as c_ARRAY) :  
 ctypes - WinError :  
 
-3. struct : 파이썬 문자열을 C 구조체로의 변환을 제공  
-4. time : 시간 모듈  
-5. inspect : 런타임 Objectdml 정보를 얻을 수 있게 도와주는 모듈(Modules, classes, methods, functions..)  
-6. logging : 로그 처리를 위한 모듈  
-7. os : 운영체제에서 제공하는 기능을 제공하는 모듈  
-8. threading : 스레드 프로그래밍 모듈  
-9. binascii : 바이너리 데이터와 ASCII 데이터의 상호변환을 제공하는 모듈  
-10. re : 정규표현식 모듈  
+* struct : 파이썬 문자열을 C 구조체로의 변환을 제공  
+* time : 시간 모듈  
+* inspect : 런타임 Objectdml 정보를 얻을 수 있게 도와주는 모듈(Modules, classes, methods, functions..)  
+* logging : 로그 처리를 위한 모듈  
+* os : 운영체제에서 제공하는 기능을 제공하는 모듈  
+* threading : 스레드 프로그래밍 모듈  
+* binascii : 바이너리 데이터와 ASCII 데이터의 상호변환을 제공하는 모듈  
+* re : 정규표현식 모듈  
