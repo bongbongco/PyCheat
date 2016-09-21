@@ -43,6 +43,7 @@ ctypes - c_size_t :
 ctypes - sizeof :  
 ctypes - c_ARRAY(ARRAY as c_ARRAY) :  
 ctypes - WinError :  
+
 3. struct : 파이썬 문자열을 C 구조체로의 변환을 제공  
 4. time : 시간 모듈  
 5. inspect : 런타임 Objectdml 정보를 얻을 수 있게 도와주는 모듈(Modules, classes, methods, functions..)  
