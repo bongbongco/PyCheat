@@ -21,23 +21,23 @@ ctypes - create_unicode_buffer :
 ctypes - create_string_buffer :  
 
 (C Type / Python Type)  
-ctypes - c_bool :  
-ctypes - c_char :  
-ctypes - c_ubyte :  
-ctypes - c_byte  :  
-ctypes - c_short :  
-ctypes - c_int :  
-ctypes - c_uint16 :  
-ctypes - c_uint32 : 
+ctypes - c_bool : _Bool / bool(1)
+ctypes - c_char : char / 
+ctypes - c_ubyte : unsigned char / 
+ctypes - c_byte  : char / 
+ctypes - c_short : short / int  
+ctypes - c_int : int / int  
+ctypes - c_uint16 : unsigned short / int  
+ctypes - c_uint32 : unsigned long / 
 ctypes - c_uint64 :  
-ctypes - c_long :  
-ctypes - c_longlong :  
-ctypes - c_ulong :  
-ctypes - c_ulonglong :  
-ctypes - c_ushort :  
-ctypes - c_void_p :  
-ctypes - c_char_p :  
-ctypes - c_wchar_p :  
+ctypes - c_long : long / 
+ctypes - c_longlong : __int64 or long long / 
+ctypes - c_ulong : unsigned long / 
+ctypes - c_ulonglong : unsigned long long / int  
+ctypes - c_ushort : unsigned short / int   
+ctypes - c_void_p : void * / 
+ctypes - c_char_p : char * / 
+ctypes - c_wchar_p : wchar_t * / 
 ctypes - c_size_t :  
 
 ctypes - sizeof :  
