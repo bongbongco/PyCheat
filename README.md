@@ -62,4 +62,4 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
     * def - read : 읽을 데이터가 'string'('s') 일 경우 주소를 read_byte 함수로 전달하고 read_byte 함수로 부터 전달받은 데이터를  for문으로 '\x00'까지 읽어 반환. 읽을 데이터가 'binary' 인 경우 read_binary 함수로 주소를 전달하고 반환된 값을 처리 없이 반환. 읽을 데이터가 'byte'('b')인 경우 read_byte 함수로 주소 전달 후 반환된 값을 처리 없이 반환. 그 밖의 경우 type_unpack 함수로 자료형 키워드와 비트 수를 반환 받은 후 read_byte함수로 데이터를 읽어 데이터 언팩(struct.unpack) 수행.
     * def - write : 기록할 데이터가 'binary' 인 경우 write_binary 함수로 주소 및 데이터를 전달 후 반환된 값을 처리없이 반환. 기록할 데이터가 ('binary' 및)'bytes' 가 아닌 경우 type_unpack 함수로 자료형 키워드와 비트 수를 반환 받은 후 패킹(struct.pack)하여 write_bytes 함수 수행 후 반환된 데이터 처리 없이 반환. 기록할 데이터가 'bytes' 인 경우 write_bytes 함수에 주소와 데이터 전달 후 반환된 데이터 처리 없이 반환.
     * def - get_symbolic_name : 
-    * def - getInstruction : read_byte 함수에 주소를 전달하여 길이 32 만큼 데이터를 반환 받은 후 Distorm3Decoder
+    * def - getInstruction : read_byte 함수에 주소를 전달하여 길이 32 만큼 데이터를 반환 받은 후 Distorm3Decoder(Maybee -https://github.com/gdabah/distorm) 함수로 디스어셈블하여 반환
