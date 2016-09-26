@@ -55,5 +55,5 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
  * def - type_unpack : 자료형 확인 후, 자료형 키워드와 비트 수를 반환
  * class - process : 
    * def - PELoad : 
-   * def - write_byte :  
- 
+   * def - write_byte : VirtualProtectEx의 PAGE_EXECUTE_READWRITE 속성을 이용하여 읽고 쓸 수 있게 메모리 보호 상태를 변경한 후 메모리 값을 읽음. OldProtect 속성을 이용하여 원래 상태로 변경. 읽어온 메모리 값 반환
+   * def - write_binary : 
