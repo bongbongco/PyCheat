@@ -57,3 +57,7 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
     * def - PELoad :  
     * def - write_byte : VirtualProtectEx의 PAGE_EXECUTE_READWRITE 속성을 이용하여 읽고 쓸 수 있게 메모리 보호 상태를 변경한 후 메모리에 문자열 값을 기록. OldProtect 속성을 이용하여 원래 상태로 변경. 읽어온 메모리 값 반환  
     * def - write_binary : c_type의 create_string_buffer 함수를 이용하여 기록할 바이너리 데이터 담은 후 VirtualProtectEx로 메모리 주소 지정 하여 WriteProcessMemory 함수로 바이너리 데이터 기록.
+    * def - read_byte : create_string_buffer 함수를 이용하여 읽을 길이(4byte) 지정 후 while문을 이용하여 ReadProcessMemory 함수로 데이터 읽음.
+    * def - read_binary : create_string_buffer 함수를 이용하여 읽을 길이(4) 지정 후 ReadProcessMemory 함수로 데이터 읽음.
+    * def - read : 읽을 데이터가 'string'('s') 일 경우 주소를 read_byte 함수로 전달하고 read_byte 함수로 부터 전달받은 데이터를  for문으로 '\x00'까지 읽어 반환. 읽을 데이터가 'binary' 인 경우 read_binary 함수로 주소를 전달하고 반환된 값을 처리 없이 반환. 읽을 데이터가 'byte'('b')인 경우 read_byte 함수로 주소 전달 후 반환된 값을 처리 없이 반환. 그 밖의 경우 type_unpack 함수로 자료형 키워드와 비트 수를 반환 받은 후 read_byte함수로 데이터를 읽어 데이터 언팩(struct.unpack) 수행.
+    * def - write : 기록할 데이터가 'binary' 인 경우 write_binary 함수로 주소 및 데이터를 전달 후 반환된 값을 처리없이 반환. 기록할 데이터가 ('binary' 및)'bytes' 가 아닌 경우 type_unpack 함수로 자료형 키워드와 비트 수를 반환 받은 후 패킹(struct.pack)하여 write_bytes 함수 수행 후 반환된 데이터 처리 없이 반환. 기록할 데이터가 'bytes' 인 경우 write_bytes 함수에 주소와 데이터 전달 후 반환된 데이터 처리 없이 반환.
