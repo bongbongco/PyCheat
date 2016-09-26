@@ -55,5 +55,5 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
  * def - type_unpack : 자료형 확인 후, 자료형 키워드와 비트 수를 반환
  * class - process : 
   * def - PELoad : 
- 
+  * def - write_byte : 
  
