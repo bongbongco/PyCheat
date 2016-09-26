@@ -90,7 +90,7 @@ class Process(object):
         length = len(data)
         lpBuffer = create_string_buffer(data[count.value:])
 
-        self.winapi.VirtualProtectEx(address, size=0x10)
+        self.winapi.VirtualProtectEx(address, size=0x10) # Why not used "PAGE_EXECUTE_READWRITE"
 
         res = self.winapi.WriteProcessMemory(address, lpBuffer, length, byref(count))
         return res
