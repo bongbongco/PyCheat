@@ -63,3 +63,6 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
     * def - write : 기록할 데이터가 'binary' 인 경우 write_binary 함수로 주소 및 데이터를 전달 후 반환된 값을 처리없이 반환. 기록할 데이터가 ('binary' 및)'bytes' 가 아닌 경우 type_unpack 함수로 자료형 키워드와 비트 수를 반환 받은 후 패킹(struct.pack)하여 write_bytes 함수 수행 후 반환된 데이터 처리 없이 반환. 기록할 데이터가 'bytes' 인 경우 write_bytes 함수에 주소와 데이터 전달 후 반환된 데이터 처리 없이 반환.
     * def - get_symbolic_name : 
     * def - getInstruction : read_byte 함수에 주소를 전달하여 길이 32 만큼 데이터를 반환 받은 후 Distorm3Decoder(Maybee -https://github.com/gdabah/distorm) 함수로 디스어셈블하여 반환
+
+* engine.common.util
+  * def - thread : threading.Thread 함수를 이용하여 스레드 생성 및 작업 시작(Thread.start)후 Thread 반환
