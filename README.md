@@ -66,3 +66,5 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
 
 * engine.common.util
   * def - thread : threading.Thread 함수를 이용하여 스레드 생성 및 작업 시작(Thread.start)후 Thread 반환
+
+* engine.common.address
