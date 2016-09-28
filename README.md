@@ -4,9 +4,9 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
 ## PyCheat 소스 분석하기
 ###사용 모듈  
 * sys :  
- * sys - platform :  
- * sys - maxsize :  
- * sys - exit :  
+ * sys - platform : 플랫폼 식별 값을 반환
+ * sys - maxsize : Integer 최대 값 반환
+ * sys - exit : 프로세스 종료
 
 * ctype :  
  * ctypes - windll : 공유 라이브러리를 로드 (stdcall)
