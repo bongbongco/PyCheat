@@ -9,13 +9,13 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
  * sys - exit :  
 
 * ctype :  
- * ctypes - windll :  
- * ctypes - wintypes :  
- * ctypes - POINTER :  
- * ctypes - Structure :  
- * ctypes - Union :  
- * ctypes - addressof :  
- * ctypes - byref :  
+ * ctypes - windll : 공유 라이브러리를 로드 (stdcall)
+ * ctypes - wintypes : 윈도우 전용 데이터 타입 사용 (ex. HWND, WPARAM, or DWORD)
+ * ctypes - POINTER : 포인터
+ * ctypes - Structure : 구조체
+ * ctypes - Union : 공용체
+ * ctypes - addressof : integer 값으로 주소 값을 반환
+ * ctypes - byref : 
  * ctypes - cast :  
  * ctypes - create_unicode_buffer :  
  * ctypes - create_string_buffer :  
@@ -36,10 +36,10 @@ Another process's memory access and modulation on Windows (like Cheat Engine)
  * ctypes - c_void_p : void * / 
  * ctypes - c_char_p : char * / 
  * ctypes - c_wchar_p : wchar_t * / 
- * ctypes - c_size_t :  
- * ctypes - sizeof :  
- * ctypes - c_ARRAY(ARRAY as c_ARRAY) :  
- * ctypes - WinError :  
+ * ctypes - c_size_t : size_t
+ * ctypes - sizeof : 메모리 버퍼의 크기를 바이트 크기로 반환0
+ * ctypes - c_ARRAY(ARRAY as c_ARRAY) : 배열
+ * ctypes - WinError : 윈도우 에러 처리
 * struct : 파이썬 문자열을 C 구조체로의 변환을 제공  
 * time : 시간 모듈  
 * inspect : 런타임 Objectdml 정보를 얻을 수 있게 도와주는 모듈(Modules, classes, methods, functions..)  
